@@ -10,19 +10,19 @@ const bookSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    // isbn:{
-    //     type: String,
-    //     required: true,
-    //     //unique: true
-    // },
+    isbn:{
+        type: String,
+        required: true,
+        //unique: true
+    },
     // id:{
     //     type: Number,
     //     required: true
     // },
-    // bookId: {
-    //     type: String,
-    //     default: uuidv4,
-    // }
+    bookId: {
+        type: String,
+        default: uuidv4,
+    }
 })
 
 const Books = mongoose.model('book', bookSchema);

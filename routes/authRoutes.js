@@ -4,7 +4,7 @@ const authControllers = require('../controllers/authControllers');
 const userController = require('../controllers/userController')
 const bookController = require('../controllers/bookController')
 const borrowedBooks = require('../middleware/maxBorrowedBook');
-const { loginAuth, logout } = require('../middleware/loginAuth');
+const { loginAuth } = require('../middleware/loginAuth');
 
 
 
